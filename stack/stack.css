@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* array boundary */
+.grid{
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: end;
+    margin: 1vh auto;
+    height: 70vh;
+    width: 15vw;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    /* border: 2px solid black;  */
+}
+/* element-box */
+.grid div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: x-large;
+}
+.grid div:hover {
+    background-color: aquamarine;
+  }
+/* pointer  */
+.image{
+    width: 4vw;
+    position: relative;
+    top: 456px;
+    left: 39vw;
+    visibility:hidden;
+}
+/* title */
+.header{
+    height: 9vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    background-color: aquamarine;
+}
+/* tasks */
+.sub{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+}
+.button {
+    background-color: aquamarine; /* Green */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    width: 11vw;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 3.5vh;
+    margin: 1vh;
+    font-size: 2.5vh;
+  }
+  .button1:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    width: 11vw;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 3.5vh;
+    margin: 1vh;
+    font-size: 2.5vh;
+  }
+  .button2:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffffff;
+    width: 11vw;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 3.5vh;
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+    font-size: 2.5vh;
+  }
+  .button3:hover {
+    background-color: aquamarine;
+    color: black;
+  }
