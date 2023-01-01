@@ -24,6 +24,14 @@ function addatend() {
     vi++;
     let square = document.createElement('div')
     square.setAttribute('id', k)
+
+    if(vi!=1){
+        let image=document.createElement('section');
+        image.setAttribute('id','pointer');
+        image.innerHTML='<img src="image.png" alt="">';
+        grid.append(image)
+    }
+
     grid.append(square)
     let div1 = document.getElementById(k);
     let data = document.createElement('div')
