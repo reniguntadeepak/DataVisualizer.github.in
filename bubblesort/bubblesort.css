@@ -74,7 +74,7 @@
     border: 2px solid #ffffff;
     border-radius: 6px;
     border: 1px solid black;
-    margin: 2vh;
+    margin: 1vh;
     padding: 3px 9px;
     font-size: 1.2rem;
   }
@@ -126,5 +126,5 @@
     height: 3vh;
   }
   .v p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
