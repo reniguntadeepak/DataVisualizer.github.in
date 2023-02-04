@@ -4,16 +4,23 @@ let timeout = 1000
 let squares = []
 let k = 0;
 function nextitem() {
-    let num = document.getElementById('number').value;
-    let square = document.createElement('div')
-    square.setAttribute('id', k)
-    square.innerHTML = num
-    grid.append(square)
-    squares.push(square)
-    k += 1;
+    let b = validate();
+    if (b) {
+        let num = document.getElementById('number').value;
+        let square = document.createElement('div')
+        square.setAttribute('id', k)
+        square.innerHTML = num
+        grid.append(square)
+        squares.push(square)
+        k += 1;
+    }
 }
 // function for bubble sort(ascending order)
 function bubble_sort_asc() {
+    if(k==0){
+        alert("please enter data..");
+        return
+    }
     for (let i = 0; i < squares.length - 1; i++) {
 
         for (let j = 0; j < (squares.length - i - 1); j++) {
@@ -54,6 +61,10 @@ function bubble_sort_asc() {
 
 // function for bubble sort(descending order)
 function bubble_sort_desc() {
+    if(k==0){
+        alert("please enter data..");
+        return
+    }
     for (let i = 0; i < squares.length - 1; i++) {
 
         for (let j = 0; j < (squares.length - i - 1); j++) {
@@ -93,13 +104,13 @@ function bubble_sort_desc() {
 }
 
 //code for validating the input
-function validate{
-    let x = document.getElementById("number");
-    let text;
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
+function validate() {
+    let x = document.getElementById("number").value;
+    if (isNaN(x)||x=="") {
+        alert("Please enter a valid number");
+        return false;
     }
-    alert("Please enter a valid number");
+    else {
+        return true;
+    }
 }
