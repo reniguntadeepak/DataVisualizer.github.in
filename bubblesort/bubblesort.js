@@ -48,8 +48,8 @@ function bubble_sort_asc() {
             timeout += 2000;
         }
     }
-    let data=document.getElementById('para');
-    data.innerHTML='Bubble sort Ascending Order'
+    let data = document.getElementById('para');
+    data.innerHTML = 'Bubble sort Ascending Order'
 }
 
 // function for bubble sort(descending order)
@@ -88,6 +88,18 @@ function bubble_sort_desc() {
             timeout += 2000;
         }
     }
-    let data=document.getElementById('para');
-    data.innerHTML='Bubble sort Descending Order'
+    let data = document.getElementById('para');
+    data.innerHTML = 'Bubble sort Descending Order'
+}
+
+//code for validating the input
+function validate{
+    let x = document.getElementById("number");
+    let text;
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    alert("Please enter a valid number");
 }
