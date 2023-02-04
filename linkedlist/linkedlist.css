@@ -1,15 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-    
 }
 /* main grid  */
 .grid{
     display: flex;
     flex-flow: row wrap;
     width: 85vw;
-    height: 50px;
+    height: 8.2vh;
     margin: -5vh auto;
+    border: 1px solid black;
 }
 #pointer{
   height: inherit;
@@ -23,10 +23,12 @@
     display: flex;
     justify-content: center;
     margin-bottom:20vh;
-    width: 160px;
-    height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 210px;
+    height: 45px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
 }
 /* data and link portions in node  */
 .grid div div{
@@ -88,16 +90,40 @@ img{
     visibility: hidden;
     background: aquamarine;
 }
-.a{
+/* .a{
     height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
     font-weight: 300;
-}
-.s{
+} */
+/* .s{
     display: inline;
+} */
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+@media(max-width:998px) {
+  html {
+    font-size: 88%;
+  }
+
+  .sub {
+    flex-direction: column;
+  }
+
+  .v input {
+    height: 2vh;
+  }
+  .grid {
+    height: 8vh;
+    margin: 9vh auto;
+    margin: -5vh auto;
+  }
 }
 .b{
     height: 9vh;
@@ -125,41 +151,48 @@ img{
   }
   
   .button1 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #ffffff;
-    width: 11vw;
     border-radius: 6px;
     border: 1px solid black;
-    height: 3.5vh;
+    margin: 1vh;
+    padding: 3px 9px;
+    font-size: 1.2rem;
   }
+  
   .button1:hover {
     background-color: aquamarine;
     color: black;
   }
-  .button3 {
-    background-color: white; 
-    color: black; 
+  .button2 {
+    background-color: white;
+    color: black;
     border: 2px solid #ffffff;
-    width: 8vw;
     border-radius: 6px;
     border: 1px solid black;
-    height: 3.5vh;
+    margin: 1vh;
+    padding: 3px 9px;
+    font-size: 1.2rem;
   }
-  .button3:hover {
+  
+  .button2:hover {
     background-color: aquamarine;
     color: black;
   }
-  .button2 {
-    background-color: white; 
-    color: black; 
+  
+  .button3 {
+    background-color: white;
+    color: black;
     border: 2px solid #ffffff;
-    width: 13vw;
     border-radius: 6px;
     border: 1px solid black;
-    height: 3.5vh;
+    margin: 1vh;
+    padding: 3px 9px;
+    font-size: 1.2rem;
   }
-  .button2:hover {
+  
+  .button3:hover {
     background-color: aquamarine;
     color: black;
   }
@@ -169,4 +202,25 @@ img{
   }
   .aaa{
     font-weight: 115;
+  }
+  .dis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+  }
+  
+  .v {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .v input {
+    height: 3vh;
+  }
+  
+  .v p {
+    font-size: 1.2rem;
   }

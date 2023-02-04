@@ -25,11 +25,15 @@ function addatend() {
     let square = document.createElement('div')
     square.setAttribute('id', k)
 
+    if(vi==1){
+        square.style.width="160px";
+    }
+
     if(vi!=1){
         let image=document.createElement('section');
         image.setAttribute('id','pointer');
         image.innerHTML='<img src="image.png" alt="">';
-        grid.append(image)
+        square.append(image)
     }
 
     grid.append(square)
@@ -60,6 +64,7 @@ function addatend() {
 }
 // function to insert at beginning
 function addatbeg() {
+
     let num = document.getElementById('number').value;
     values.reverse();
     values[vi] = num;
@@ -67,6 +72,9 @@ function addatbeg() {
     vi++;
     let square = document.createElement('div')
     square.setAttribute('id', k)
+    if(vi==1){
+        square.style.width="160px";
+    }
     grid.append(square)
     let div1 = document.getElementById(k);
     let data = document.createElement('div')
@@ -90,6 +98,12 @@ function addatbeg() {
         let b = document.getElementById(k);
         b.style.order = c;
         c -= 1;
+    }
+    if(vi!=1){
+        let image=document.createElement('section');
+        image.setAttribute('id','pointer');
+        image.innerHTML='<img src="image.png" alt="">';
+        square.append(image)
     }
     squares.push(square)
     k += 1;
