@@ -1,130 +1,151 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.html{
+
+.html {
   font-size: 10px;
 }
+
 /* array boundary */
-.grid{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 15vh auto;
-    height: 10vh;
-    width: 80vw;
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 15vh auto;
+  height: 10vh;
+  width: 80vw;
 }
+
 /* element-box */
-.grid div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: inherit;
-    border: 1px solid black;
-    font-weight: 700;
-    color: black;
-    font-size: x-large;
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: inherit;
+  border: 1px solid black;
+  font-weight: 700;
+  color: black;
+  font-size: x-large;
 }
+
 /* sorting methods */
-.c{
-    margin-top: 20px;
-    margin-left:40vw;
+.c {
+  margin-top: 20px;
+  margin-left: 40vw;
 }
+
 /* coloring element */
-.exchange{
-    background-color: aquamarine; 
+.exchange {
+  background-color: aquamarine;
 }
+
 /* title */
-.header{
-    height: 9vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    background-color: aquamarine;
-    margin-bottom: 1vh;
+.header {
+  height: 9vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: aquamarine;
+  margin-bottom: 1vh;
 }
+
 /* tasks */
-.sub{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
 }
+
 @media(max-width:998px) {
-  html{
+  html {
     font-size: 88%;
   }
-  .sub{
+
+  .sub {
     flex-direction: column;
   }
-  .v input{
+
+  .v input {
     height: 2vh;
   }
-  .grid{
+
+  .grid {
     height: 8vh;
     margin: 9vh auto;
   }
-} 
-  .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    border: 1px solid black;
-    margin: 1vh;
-    padding: 3px 9px;
-    font-size: 1.2rem;
-  }
-  .button1:hover {
-    background-color: aquamarine;
-    color: black;
-  }
-  .button2 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    border: 1px solid black;
-    margin: 1vh;
-    padding: 3px 9px;
-    font-size: 1.2rem;
-  }
-  .button2:hover {
-    background-color: aquamarine;
-    color: black;
-  }
-  .button3 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    border: 1px solid black;
-    margin: 1vh;
-    padding: 3px 9px;
-    font-size: 1.2rem;
-  }
-  .button3:hover {
-    background-color: aquamarine;
-    color: black;
-  }
-  .dis{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 9vh;
-  }
-  .v{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .v input{
-    height: 3vh;
-  }
-  .v p{
-    font-size: 1.2rem;
-  }
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 3px 9px;
+  font-size: 1.2rem;
+}
+
+.button1:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 3px 9px;
+  font-size: 1.2rem;
+}
+
+.button2:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin: 1vh;
+  padding: 3px 9px;
+  font-size: 1.2rem;
+}
+
+.button3:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh;
+}
+
+.v {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.v input {
+  height: 3vh;
+}
+
+.v p {
+  font-size: 1.2rem;
+}
