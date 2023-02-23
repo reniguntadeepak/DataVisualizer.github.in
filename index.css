@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:'Roboto', sans-serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+ 
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://static.vecteezy.com/system/resources/previews/000/544/155/original/blue-technology-abstract-background-with-white-line-dot-business-and-connection-concept-internet-cyber-and-network-theme-smart-industry-and-computer-science-wallpaper-futuristic-and-industry-4-0-vector.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+
+}
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  
+}
+.logo{
+  cursor: pointer;
+}
+nav{
+ flex: 1;
+ text-align: right;
+
+}
+.menu-icon{
+  margin-left: 40px;
+  cursor: pointer;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+
+}
+.col{
+  flex-basis: 50%;
+}
+h1{
+  color: #fff;
+  font-size: 70px;
+
+}
+p{
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
+
+}
+button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border:0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+
+}
+.card{
+width: 150px;
+height: 180px;
+display: inline-block;
+border-radius: 10px;
+padding: 15px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+
+background-position: center;
+background-size: cover;
+transition: transform 0.5s;
+}
+.card1{
+background-image: url(http://summitmtocleaning.com/wp-content/uploads/2015/03/bubbles-background.png);
+}
+.card2{
+  background-image: url(https://tse2.mm.bing.net/th?id=OIP.5CSaEtWzwwZc0QxT3-NbeQHaEK&pid=Api&P=0);
+}
+.card3{
+    background-image: url(https://taofinance.pt/wp-content/uploads/2020/12/Fifo.jpg);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+
+}
+h5{
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+
+
+}
+
+.card p{
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+
+}
